@@ -1,0 +1,120 @@
+{
+  "n_samples": 108,
+  "n_attack": 48,
+  "languages": [
+    "arabic",
+    "chinese",
+    "french",
+    "german",
+    "hindi",
+    "hinglish",
+    "italian",
+    "japanese",
+    "korean",
+    "portuguese",
+    "russian",
+    "spanish"
+  ],
+  "before": {
+    "recall": 0.020833333333333332,
+    "fpr": 0.0,
+    "precision": 1.0,
+    "f1": 0.04081632653061225,
+    "tp": 1,
+    "fn": 47,
+    "fp": 0,
+    "tn": 60
+  },
+  "after": {
+    "recall": 1.0,
+    "fpr": 0.0,
+    "precision": 1.0,
+    "f1": 1.0,
+    "tp": 48,
+    "fn": 0,
+    "fp": 0,
+    "tn": 60
+  },
+  "per_language": {
+    "arabic": {
+      "recall_before": 0.0,
+      "recall_after": 1.0,
+      "controls_total": 5,
+      "controls_kept": 5
+    },
+    "chinese": {
+      "recall_before": 0.0,
+      "recall_after": 1.0,
+      "controls_total": 5,
+      "controls_kept": 5
+    },
+    "french": {
+      "recall_before": 0.0,
+      "recall_after": 1.0,
+      "controls_total": 5,
+      "controls_kept": 5
+    },
+    "german": {
+      "recall_before": 0.0,
+      "recall_after": 1.0,
+      "controls_total": 5,
+      "controls_kept": 5
+    },
+    "hindi": {
+      "recall_before": 0.0,
+      "recall_after": 1.0,
+      "controls_total": 5,
+      "controls_kept": 5
+    },
+    "hinglish": {
+      "recall_before": 0.25,
+      "recall_after": 1.0,
+      "controls_total": 5,
+      "controls_kept": 5
+    },
+    "italian": {
+      "recall_before": 0.0,
+      "recall_after": 1.0,
+      "controls_total": 5,
+      "controls_kept": 5
+    },
+    "japanese": {
+      "recall_before": 0.0,
+      "recall_after": 1.0,
+      "controls_total": 5,
+      "controls_kept": 5
+    },
+    "korean": {
+      "recall_before": 0.0,
+      "recall_after": 1.0,
+      "controls_total": 5,
+      "controls_kept": 5
+    },
+    "portuguese": {
+      "recall_before": 0.0,
+      "recall_after": 1.0,
+      "controls_total": 5,
+      "controls_kept": 5
+    },
+    "russian": {
+      "recall_before": 0.0,
+      "recall_after": 1.0,
+      "controls_total": 5,
+      "controls_kept": 5
+    },
+    "spanish": {
+      "recall_before": 0.0,
+      "recall_after": 1.0,
+      "controls_total": 5,
+      "controls_kept": 5
+    }
+  },
+  "recall_by_family": {
+    "exfiltration": 1.0,
+    "instruction_override": 1.0,
+    "prompt_leak": 1.0,
+    "role_manipulation": 1.0
+  },
+  "missed": [],
+  "blocked_controls": []
+}

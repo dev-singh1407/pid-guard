@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editor and OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# Office lock files and backups
+~$*
+*.bak
+*.orig
+*.tmp
+
+# Node (only used at build time to generate the report and slides)
+node_modules/

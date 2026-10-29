@@ -1,0 +1,66 @@
+{
+  "settings": {
+    "statistical_threshold": 0.6,
+    "semantic_threshold": 0.1,
+    "window_chars": 120,
+    "concentration_bonus": 0.18,
+    "sanitize_threshold": 0.35,
+    "block_threshold": 0.58,
+    "lr_epochs": 12,
+    "lr_l2": 0.0001,
+    "lr_rate": 0.3
+  },
+  "validation_report": {
+    "protocol": "grouped 75/25 train/val split by seed_id; test split untouched",
+    "objective": "maximise F1 - 0.55 * FPR subject to recall >= 0.9",
+    "n_train_rows": 397,
+    "n_val_rows": 131,
+    "classifier_best": {
+      "epochs": 12,
+      "l2": 0.0001,
+      "lr": 0.3,
+      "threshold": 0.6,
+      "f1": 0.8785046728971961,
+      "precision": 0.9215686274509803,
+      "recall": 0.8392857142857143,
+      "fpr": 0.05333333333333334,
+      "objective": 0.8491713395638628,
+      "tp": 47,
+      "fp": 4,
+      "tn": 71,
+      "fn": 9
+    },
+    "classifier_trials": 72,
+    "semantic_best": {
+      "threshold": 0.1,
+      "f1": 0.6459627329192548,
+      "precision": 0.49523809523809526,
+      "recall": 0.9285714285714286,
+      "fpr": 0.7066666666666667,
+      "objective": 0.25729606625258805,
+      "tp": 52,
+      "fp": 53,
+      "tn": 22,
+      "fn": 4
+    },
+    "pipeline_protocol": "leave-one-family-out over 8 attack families",
+    "pipeline_best": {
+      "window_chars": 120,
+      "concentration_bonus": 0.18,
+      "sanitize_threshold": 0.35,
+      "block_threshold": 0.58,
+      "f1": 0.9486652977412731,
+      "precision": 0.9352226720647774,
+      "recall": 0.9625,
+      "fpr": 0.03333333333333333,
+      "objective": 0.9303319644079397,
+      "tp": 231,
+      "fp": 16,
+      "tn": 464,
+      "fn": 9,
+      "hard_recall": 0.9666666666666667,
+      "ms_per_span": 3.494
+    },
+    "elapsed_sec": 123.0
+  }
+}
